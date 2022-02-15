@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+.my-tab{
+    width: 600px;
+    margin: 100px auto;
+    background: #fff;
+    box-shadow: 0 1rem 3rem rgba(0,0,0, .175);
+    padding: 10px;
+    font-family: segoe UI;
+}
+
+.my-tab .tab-menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-tab .tab-menu ul li{
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+}
+
+.my-tab .tab-menu ul li a{
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    font-weight: 600;
+}
+.my-tab .tab-menu ul li a:hover{
+    background-color: #f9f9f9;
+
+}
+.my-tab .tab-menu ul li a.active{
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #fff; 
+}
+
+
+.tab-pane{
+    display: none;
+    padding: 10px;
+}
+
+.tab-pane.active{
+    display: block;
+}
